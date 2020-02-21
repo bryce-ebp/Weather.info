@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <meta name="author" content="Bryce B"/>
+    <meta name="description" content="Information on the different types of weather."/>
+    <meta name="keywords" content="Weather"/>
+
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="any"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript/main.js"></script>
+
+    <title>Weather.info</title>
+</head>
+
+<body>
+    <header class="flex-container">
+        <div style="margin: .5em 0 0 2em;" class="box b2">Weather.info</div>
+    </header>
+	
+	<nav>
+        <button class="hamburger">&#9776;</button>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#rain">Rain</a></li>
+            <li><a href="#snow">Snow</a></li>
+            <li><a href="#hail">Hail</a></li>
+            <li><a href="#tornados">Tornados</a></li>
+            <li><a href="#hurricanes">Hurricanes</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+		<div class="main">
+		    <div class="flex-container">
+		        <ul id="videos">
+		            <li>
+                        <video controls autoplay>
+                            <!--we dont have software to convert to webm/ogg-->
+                            <source src="images/rainclouds.mp4" type="video/mp4" />
+		                    Your browser does not support the video tag.
+		                </video>
+                    </li>
+		            <li>
+                        <video controls>
+                            <!--we dont have software to convert to webm/ogg-->
+                            <source src="images/storm.mp4" type="video/mp4" />
+		                    Your browser does not support the video tag.
+		                </video>
+                    </li>
+		        </ul>
+		    </div>
+		</div>
+		
+		<div>
+			<h1 style="display: inline;" id="rain">Rain</h1>
+			<button id="unit" style="margin: 0 2em 0 0; display: inline; float: right;">Click to Switch to Metric</button>
+			<div class="flex-container">
+				<div>
+					<ul class="rain">
+						<li><img src="images/rain_images/rain.jpg" alt=""/></li>
+						<li><img src="images/rain_images/rain2.jpg" alt=""/></li>
+						<li><img src="images/rain_images/rain3.jpg" alt=""/></li>
+						<li><img src="images/rain_images/rain4.jpg" alt=""/></li>
+					</ul>
+				</div>
+			</div>
+            
+            <div class="flex-container text">
+				<div class="filled box b1">
+					<p>Rain is probably the most common weather pattern on this list. Rain occurs when
+                        there is too much moisture in clouds for them to hold on to, the ground and
+                        cloud temperatures are above freezing, so rain is in a liquid state. There
+                        are three different types of rain, there is classic rain which is typically
+                        0.02 inches or greater in diameter. There is drizzle which is any rain less
+                        than 0.02 inches in diameter. Lastly there is Virga, virga is when the rain
+                        is so small that it does not even reach the ground before evaporating.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div>
+			<h1 id="snow">Snow</h1>
+			<div class="flex-container">
+				<div>
+					<ul class="snow">
+						<li><img src="images/snow_images/snow.jpg" alt=""/></li>
+						<li><img src="images/snow_images/snow2.jpg" alt=""/></li>
+						<li><img src="images/snow_images/snow3.jpg" alt=""/></li>
+						<li><img src="images/snow_images/snow4.jpg" alt="Picture of a fox jumping in the snow"/></li>
+					</ul>
+				</div>
+			</div>
+            
+            <div class="flex-container text">
+				<div class="filled box b1">
+					<p>Snow is basically the opposite of rain. Snow occurs when the ground and cloud
+                        temperatures are under the freezing point of water. Snow might look like a
+                        fluffy, fun to play in type of weather but if you’re a driver this type of
+                        weather could be very dangerous. In the event of snow thawing and a flash
+                        freeze happens overnight ice could make the roads very slick. There is also the
+                        possibility of a blizzard. These massive snow storms could result in you being
+                        snowed in to your house.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div>
+			<h1 id="hail">Hail</h1>
+			<div class="flex-container">
+				<div>
+					<ul class="hail">
+						<li><img src="images/hail_images/hail.jpg" alt=""/></li>
+						<li><img src="images/hail_images/hail2.jpg" alt=""/></li>
+						<li><img src="images/hail_images/hail3.jpg" alt=""/></li>
+						<li><img src="images/hail_images/hail4.jpg" alt=""/></li>
+					</ul>
+				</div>
+			</div>
+            
+            <div class="flex-container text">
+				<div class="filled box b1">
+					<p>Sometimes when rain is on it’s way down to the ground it comes across a layer of
+                        freezing air which can freeze the raindrops and form varying sizes of
+                        hailstones. These hailstones will then fall to the ground in place of
+                        the raindrops even if the ground temperature is above freezing. Hail is a
+                        common part of severe summer thunderstorms. Hail causes roughly one billion
+                        dollars in damages a year across the United States, and falls at speeds of up
+                        to <span>120</span></p>
+				</div>
+			</div>
+		</div>
+		
+		<div>
+			<h1 id="tornados">Tornados</h1>
+			<div class="flex-container">
+				<div>
+					<ul class="tornados">
+						<li><img src="images/tornado_images/tornado.jpg" alt=""/></li>
+						<li><img src="images/tornado_images/tornado2.jpg" alt=""/></li>
+						<li><img src="images/tornado_images/tornado3.jpg" alt=""/></li>
+						<li><img src="images/tornado_images/tornado4.jpg" alt=""/></li>
+					</ul>
+				</div>
+			</div>
+            
+            <div class="flex-container text">
+				<div class="filled box b1">
+					<p>The root cause of most tornadoes is rapidly rotating thunderstorms known as
+                        supercells. Visible columns of air extended from the both of the storm is
+                        called a funnel cloud. Funnel clouds only become tornadoes when the funnel
+                        cloud makes contact with the ground. Tornadoes are considered to be pretty
+                        dangerous because they have the power to tear down buildings and rip trees
+                        and the roots straight out of the ground. Tornadoes are different categories
+                        based on their wind speeds. An EF-0 is a tornado that has wind speeds of <span>65</span>
+                        to <span>85</span>. An EF-1 has wind speeds of <span>86</span> to <span>110</span>. The EF-2 tornado has wind
+                        speeds of <span>111</span> to <span>135</span>. An EF-3 tornado has wind gusts of <span>136</span> to <span>165</span>.
+                        The EF-4 tornado has wind gusts of <span>166</span> to <span>200</span>. Lastly the rarest tornado
+                        the EF-5 has the strongest wind gusts of over <span>200</span>. If you ever encounter
+                        a tornado get to a place that can’t be moved, this could be a storm cellar
+                        or just a room in your basement with cement walls such as a furnace room.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div>
+			<h1 id="hurricanes">Hurricanes</h1>
+			<div class="flex-container">
+				<div>
+					<ul class="hurricanes">
+						<li><img src="images/hurricane_images/hurricane.jpg" alt=""/></li>
+						<li><img src="images/hurricane_images/hurricane2.jpg" alt=""/></li>
+						<li><img src="images/hurricane_images/hurricane3.jpg" alt=""/></li>
+						<li><img src="images/hurricane_images/hurricane4.jpg" alt=""/></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="flex-container text">
+				<div class="filled box b1">
+					<p>The term hurricane is only used for tropical storms that form over the Atlantic
+                        Ocean or Eastern Pacific Ocean. The generic, scientific term for these types of
+                        storms is actually tropical cyclone. For a tropical cyclone to form it requires
+                        warm ocean water. This means that tropical cyclones can only form above
+                        tropical regions where the temperature of the water is at least 80 degrees
+                        fahrenheit. The second ingredient for a tropical cyclone is wind. The storm is
+                        officially a hurricane when wind speeds reach <span>74</span>. Like tornadoes there are
+                        different categories of hurricanes. There is a Category 1 where wind speeds are
+                        between <span>74</span> and <span>95</span> and damage is usually minimal. Then there is a Category 2
+                        where the wind speeds are normally between <span>96</span> and <span>110</span> and damage is
+                        moderate. A Category 3 has wind speeds of <span>111</span> to <span>129</span> damages are expected
+                        to be extensive. Category 4 hurricanes typically have wind speeds of <span>130</span> to <span>156</span>
+                        mph damages in a Cat 4 are usually extreme. Lastly is the Category 5 hurricane
+                        wind speeds are <span>157</span> mph or higher damages in a Cat 5 are expected to be
+                        catastrophic. If you encounter a hurricane stay indoors because the high wind
+                        speeds can blow objects around causing hazard to you. If ever told to evacuate
+                        do so immediately.</p>
+				</div>
+			</div>
+		</div>
+    </div>
+	
+    <footer class="flex-container">
+        <div class="box b1">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+        </div>
+        
+        <div style="color: #eee;" class="box b2">
+            Last Updated: 2/20/2020
+        </div>
+        
+        <div class="box b3">
+            <a href="">Email Webmaster</a>&nbsp;
+			<a href="" target="_blank">Feedback</a>
+        </div>
+    </footer>
+</body>
+
+</html>
